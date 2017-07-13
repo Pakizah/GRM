@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:id="@+id/layout_root"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <ImageButton
+        android:id="@+id/Tick"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:src="@drawable/tick"
+        android:paddingBottom="10dp"/>
+    <ImageButton
+        android:id="@+id/Cross"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:src="@drawable/cross"
+        android:paddingBottom="10dp"/>
+
+
+    <EditText
+        android:layout_below="@id/Tick"
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingredient"
+        android:divider="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@android:color/transparent"
+        android:drawableBottom="@drawable/line"/>
+    <ImageButton
+        android:id="@+id/scross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_notification_clear_all"
+        android:layout_below="@+id/Tick"
+        android:background="#0000"
+        android:paddingBottom="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/NewQuantity" />
+
+
+    <EditText
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:gravity="start"
+        android:layout_below="@id/Name"
+        android:id="@+id/NewQuantity"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableBottom="@drawable/line"
+        android:textColor="@color/colorPrimaryDark">
+    </EditText>
+
+
+</RelativeLayout>

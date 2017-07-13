@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/layout_root"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/Food_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Food Item"
+        android:gravity="center"
+        android:textColor="#006c00"
+        android:textSize="20dp"
+    />
+    <TextView
+        android:paddingTop="4dp"
+        android:id="@+id/label_name"
+        android:layout_below="@id/Food_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Name : "/>
+    <TextView
+        android:paddingTop="4dp"
+        android:id="@+id/label_quantity"
+        android:layout_below="@id/label_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:inputType="number"
+        android:text="Quantity : "/>
+    <TextView
+        android:paddingTop="4dp"
+        android:id="@+id/label_unit"
+        android:layout_below="@id/label_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Unit : "/>
+
+    <EditText
+        android:textColor="@color/black"
+        android:id="@+id/food_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_toRightOf="@id/label_quantity"
+        android:layout_alignTop="@id/label_quantity"
+        android:background="@drawable/rounded_corner_edit_text"
+        android:inputType="number"
+        android:digits="0123456789."
+        android:maxLength="5"
+
+        />
+
+    <EditText
+        android:id="@+id/food_name"
+        android:layout_alignTop="@id/label_name"
+        android:layout_toRightOf="@id/label_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/rounded_corner_edit_text"
+        />
+
+    <Spinner
+        android:padding="5dp"
+        android:id="@+id/food_unit"
+        android:layout_alignTop="@id/label_unit"
+        android:layout_toRightOf="@id/label_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/Type_prompt"
+        android:background="@drawable/rounded_corner_edit_text"
+        />
+    <TextView
+    android:id="@+id/OK"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Add"
+    android:padding="5dp"
+    android:layout_margin="10dp"
+    android:layout_alignParentRight="true"
+    android:layout_below="@id/food_unit"
+    android:textColor="@color/colorPrimary"/>
+    <TextView
+        android:padding="5dp"
+        android:id="@+id/Cancel"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_toLeftOf="@id/OK"
+        android:layout_below="@id/food_unit"
+        android:textColor="@color/colorPrimary"/>
+
+</RelativeLayout>

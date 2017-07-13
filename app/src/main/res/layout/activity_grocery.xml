@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.example.pakizahfatima.grocerylist.GroceryActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:divider="@color/colorPrimaryDark"
+        android:dividerHeight="2px">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="GROCERY LIST"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp" />
+        />
+
+        <ImageButton
+            android:layout_marginRight="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/open_calender"
+            android:background="@drawable/calander"
+            android:layout_gravity="right"
+            />
+    </android.support.v7.widget.Toolbar>
+    <Button
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/AddMore"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@android:drawable/ic_menu_add"
+        android:drawablePadding="5dp"
+        android:text="Add More Items"
+        android:textColor="@color/white"
+        android:layout_alignParentLeft="true"
+        android:backgroundTint="@color/colorPrimaryDark"
+
+
+        />
+    <Button
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:layout_below="@id/toolbar"
+        android:drawableLeft="@android:drawable/ic_menu_view"
+        android:drawablePadding="5dp"
+        android:id="@+id/eye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hide Marked Items"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_alignParentRight="true"
+        style="s"
+        />
+
+    <ListView
+        android:layout_below="@id/AddMore"
+        android:layout_margin="5dp"
+        android:id="@+id/g_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:divider="@color/colorPrimaryDark"
+        android:dividerHeight="1px">
+    </ListView>
+
+</RelativeLayout>

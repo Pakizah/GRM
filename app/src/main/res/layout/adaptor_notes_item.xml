@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    tools:context=".Adaptor_Notes">
+    <ImageButton
+        android:paddingTop="5dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/trash"
+        android:src= "@android:drawable/ic_menu_delete"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+
+        android:backgroundTint="#ff0000"/>
+    <ImageButton
+        android:id="@+id/edit"
+        android:layout_height="50dp"
+        android:layout_width="60dp"
+        android:src="@android:drawable/ic_menu_edit"
+        android:layout_toLeftOf="@id/trash"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:backgroundTint="#FFFFD7"
+        />
+
+    <TextView
+        android:id="@+id/MP_Notes"
+        android:layout_toLeftOf="@id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:maxLines="1"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:text="Ingredient"
+        />
+
+
+</RelativeLayout>

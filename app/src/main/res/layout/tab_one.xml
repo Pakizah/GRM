@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+        <ImageView
+            android:layout_marginTop="20dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/im"
+            android:src="@drawable/img1"
+            android:focusable="true"/>
+
+        <TextView
+            android:layout_below="@id/im"
+            android:layout_marginTop="10dip"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHICKEN CHOWMEIN"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+        <ImageView
+            android:layout_marginTop="5dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p_c"
+            android:src="@drawable/clock"
+            android:paddingLeft="35dp"
+            android:layout_below="@id/textView"
+            />
+        <TextView
+
+            android:paddingLeft="5dip"
+            android:layout_below="@id/textView"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@id/p_c"
+            android:id="@+id/prep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prep Time"
+            android:textColor="@color/colorPrimaryDark" />
+        <TextView
+            android:id="@+id/time_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : 10m"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@+id/prep"
+            android:layout_below="@id/textView"/>
+        <ImageView
+            android:layout_below="@id/textView"
+            android:layout_toRightOf="@id/time_p"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/c_c"
+            android:src="@drawable/clock"
+            />
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/cook_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cook Time"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/textView"
+            android:layout_toRightOf="@id/time_p" />
+        <TextView
+            android:id="@+id/time_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : 15m"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_toRightOf="@id/cook_t"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="10dp" />
+    <TextView
+        android:id="@+id/serve"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_p"
+
+        android:text="Serves: "
+        android:textSize="17dp"
+        android:layout_marginLeft="80dp"
+
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_action_group"
+        android:drawableTint="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimaryDark" />
+    <EditText
+        android:id="@+id/persons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_p"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/serve"
+        android:layout_toEndOf="@id/serve"
+
+        android:textSize="18dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="1"
+        android:gravity="center"
+        android:inputType="number"
+        android:focusable="true"
+        android:background="@android:color/transparent"
+        android:textColorHint="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/inc"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@color/colorPrimaryDark"
+android:textColor="@color/white"
+        android:text="+"
+        android:textSize="20sp"
+        android:gravity="center"
+
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/time_p"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/persons"
+        android:layout_toEndOf="@id/persons"/>
+    <Button
+        android:id="@+id/dec"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@color/colorPrimaryDark"
+        android:tag="Decrement"
+        android:text="-"
+        android:textStyle="bold"
+        android:textSize="20sp"
+android:textColor="@color/white"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/time_p"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/inc" />
+
+</RelativeLayout>

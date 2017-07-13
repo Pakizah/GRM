@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_all_recipe_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/add"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Add More Ingredients"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/colorPrimaryDark"/>
+    <ListView
+        android:layout_above="@id/add"
+        android:layout_margin="5dp"
+        android:id="@+id/lv_values"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:divider="@color/colorPrimaryDark"
+        android:dividerHeight="1px">
+    </ListView>
+
+
+</RelativeLayout>

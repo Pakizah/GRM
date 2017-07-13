@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:stretchColumns="*" >
+            <TableRow android:layout_weight="1" >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:id="@+id/tile1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/mybutton"
+
+                        android:drawableTop="@drawable/recipe"
+                        android:paddingTop="50dp"
+                        android:paddingBottom="20dp"
+
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="4dp"
+
+                        android:text="Recipes"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13dip"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:id="@+id/tile2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/mybutton"
+
+                        android:drawableTop="@drawable/calendar"
+                        android:paddingTop="50dp"
+                        android:paddingBottom="20dp"
+
+
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="4dp"
+
+                        android:text="Meal Plan"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13dip" />
+
+
+                </RelativeLayout>
+            </TableRow>
+            <TableRow android:layout_weight="1" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:id="@+id/tile3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/mybutton"
+
+                        android:drawableTop="@drawable/list"
+                        android:paddingTop="50dp"
+                        android:paddingBottom="20dp"
+
+                        android:layout_marginRight="4dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+
+                        android:text="Grocery List"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13dip"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:id="@+id/tile4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/mybutton"
+
+                        android:drawableTop="@drawable/book"
+                        android:paddingTop="50dp"
+                        android:paddingBottom="20dp"
+
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+
+
+                        android:text="Ingredient Glossary"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13dip"
+                        />
+
+                </RelativeLayout>
+
+
+            </TableRow>
+            <TableRow android:layout_weight="1" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:id="@+id/tile5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/mybutton"
+
+                        android:layout_marginRight="4dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="10dp"
+
+                        android:drawableTop="@drawable/sub"
+                        android:paddingTop="50dp"
+                        android:paddingBottom="20dp"
+
+
+                        android:text="Submit Your Recipe"
+
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13dip"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:id="@+id/tile6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/mybutton"
+
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="10dp"
+
+                        android:text="How to Use"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13dip"
+
+                        android:drawableTop="@drawable/how"
+                        android:paddingTop="50dp"
+                        android:paddingBottom="20dp"
+
+                        android:bottomRightRadius="10dp"
+                        android:bottomLeftRadius="10dp"
+                        android:topLeftRadius="10dp"
+                        android:topRightRadius="10dp"
+
+                        />
+
+                </RelativeLayout>
+
+
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

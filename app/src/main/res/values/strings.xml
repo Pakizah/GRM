@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="english">English Name</string>
+    <string name="urdu">Urdu Name</string>
+    <string name="serach">Search...</string>
+    <string name="Recipes_tile_name">RECIPES</string>
+    <string name="MealPlan_tile_name">MEAL PLAN</string>
+    <string name="Grocery_tile_name">GROCERY LIST</string>
+    <string name="Glossary_tile_name">INGREDIENT GLOSSARY</string>
+    <string name="recipe_submission_tile">SUBMIT YOUR RECIPE</string>
+    <string name="_6th_tile_name">HOW TO USE</string>
+    <string name="MP_B1">Add Recipe</string>
+    <string name="MP_B2">Add Note</string>
+    <string name="MP_L1">Recipes</string>
+    <string name="MP_L2">Notes</string>
+    <string name="SR_RecipeName">Recipe Name</string>
+    <string name="Type_prompt">Choose a Type</string>
+    <string name="SR_Time">Time</string>
+    <string-array name="Food_Type">
+        <item>Homely Foods</item>
+        <item>Quick Desserts</item>
+        <item>Insta Food</item>
+    </string-array>
+    <string-array name="units">
+        <item>g</item>
+        <item>l</item>
+    </string-array>
+</resources>
